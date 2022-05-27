@@ -143,7 +143,7 @@ ActiveAdmin.setup do |config|
   #
   # Enable and disable Batch Actions
   #
-  config.batch_actions = true
+  config.batch_actions = false
 
   # == Controller Filters
   #
@@ -230,12 +230,11 @@ ActiveAdmin.setup do |config|
   #
   # To change the default utility navigation to show a link to your website & a logout btn
   #
-  #   config.namespace :admin do |admin|
-  #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
-  #       admin.add_logout_button_to_menu menu
-  #     end
-  #   end
+    config.namespace :admin do |admin|
+      admin.build_menu :default do |menu|
+        menu.add label: "WideFix", url: "https://clutch.co/profile/widefix#summary", html_options: { target: :blank }
+      end
+    end
   #
   # If you wanted to add a static menu item to the default menu provided:
   #
@@ -317,7 +316,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  # config.footer = 'my custom footer text'
+  config.footer = "© Copyright #{Date.current.year} <a href='https://clutch.co/profile/widefix#summary' target='_blank'>WideFix</a>".html_safe
 
   # == Sorting
   #
@@ -334,6 +333,4 @@ ActiveAdmin.setup do |config|
   # config.use_webpacker = true
 
   config.route_options = {path: '/'}
-  config.footer = "© Copyright #{Date.current.year} <a href='https://clutch.co/profile/widefix#summary' target='_blank'>WideFix</a>".html_safe
-  config.batch_actions = false
 end
