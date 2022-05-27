@@ -1,4 +1,8 @@
 ActiveAdmin.register Plan do
+  actions :all, except: [:destroy]
+
+  filter :name
+
   form do |f|
     inputs "Details" do
       f.input :name

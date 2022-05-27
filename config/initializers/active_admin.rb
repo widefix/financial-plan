@@ -117,7 +117,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  # config.root_to = 'dashboard#index'
+  config.root_to = 'plans#index'
 
   # == Admin Comments
   #
@@ -334,4 +334,6 @@ ActiveAdmin.setup do |config|
   # config.use_webpacker = true
 
   config.route_options = {path: '/'}
+  config.footer = "© Copyright #{Date.current.year} <a href='https://clutch.co/profile/widefix#summary' target='_blank'>WideFix</a>".html_safe
+  config.batch_actions = false
 end
