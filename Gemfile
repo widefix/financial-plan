@@ -13,6 +13,7 @@ gem "sprockets-rails"
 gem "pg"
 gem "activeadmin"
 gem "sass-rails"
+gem "scenic"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
