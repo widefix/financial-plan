@@ -1,24 +1,9 @@
-# README
+# Financial Plan on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails application demo that was described in this article https://railsguides.net/2022-05-18-financial-plan-on-rails/
 
-Things you may want to cover:
+It shows how to combine all these things together to make a financial planning web application in a moment:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Rails](https://rubyonrails.org/)
+- [ActiveAdmin](https://activeadmin.info/)
+- [Scenic](https://github.com/scenic-views/scenic)
