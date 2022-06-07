@@ -7,3 +7,5 @@ It shows how to combine all these things together to make a financial planning w
 - [Rails](https://rubyonrails.org/)
 - [ActiveAdmin](https://activeadmin.info/)
 - [Scenic](https://github.com/scenic-views/scenic)
+
+The application is [deployed on Heroku](https://personal-financial-plan.herokuapp.com/).
